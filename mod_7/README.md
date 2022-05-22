@@ -10,6 +10,10 @@
   - Faster fething of values.
 
 
+ - Copy & Drop
+  - Rust won't let us use copy trait if a type has impl drop trait. 
+
+
 
   
 
