@@ -1,12 +1,14 @@
 fn main() {
-    let string_data = String::from("Siddharth");
+    let mut string_data = String::from("Siddharth");
     let int_data: i32 = 12;
 
     makes_copy(int_data);
-    takes_ownership(string_data);
+    // takes_ownership(string_data);
+    takes_reference(&string_data);
+    modify_reference(&mut string_data);
 
     // Error below
-    // println!("Value {}", string_data);
+    println!("Value {}", string_data);
     print!("Value {}", int_data);
 }
 
@@ -16,6 +18,16 @@ fn makes_copy(value: i32) {
 
 fn takes_ownership(value: String) {
     print!("Value {}", value);
+}
+
+fn takes_reference(data: &String) {
+    // Error -
+    // data.push_str("test");
+}
+
+fn modify_reference(data: &mut String) {
+    data.push_str("test");
+
 }
 
 fn copy_and_clone() {
