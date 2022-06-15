@@ -8,3 +8,6 @@
 
 - Mut reference
  - This types value can be updated.
+
+- Slice
+  - Slice are immutable reference to data mostly string. 
