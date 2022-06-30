@@ -55,6 +55,7 @@
     - This types value can be updated.
   - Slice
     - Slice are immutable reference to data mostly string. 
+    
 -Mod_9
   - Struct
     - Tuple, unit & normal struct
